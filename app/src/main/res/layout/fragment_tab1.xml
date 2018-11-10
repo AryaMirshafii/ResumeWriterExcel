@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+
+              android:background="@drawable/lightblue">
+
+    <WebView
+        android:id="@+id/resumeWebView"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+
+        android:layout_above="@+id/resumeSelector"
+        android:layout_centerHorizontal="true"
+
+
+        android:layout_marginTop="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <WebView
+        android:id="@+id/renderWebView"
+        android:layout_width="1360dp"
+        android:layout_height="1760dp"
+
+        android:layout_marginStart="800dp"
+        android:layout_marginTop="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        
+        tools:layout_editor_absoluteY="0dp" />
+
+
+    <HorizontalScrollView
+        android:id="@+id/resumeSelector"
+        android:layout_width="256dp"
+        android:layout_height="146dp"
+
+        android:layout_alignParentBottom="true"
+
+        android:layout_centerHorizontal="true"
+
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+
+
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/resumeWebView"
+        app:layout_constraintVertical_bias="0.548">
+
+        <LinearLayout
+            android:id="@+id/linear"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+
+            >
+
+            <ImageButton
+                android:id="@+id/resume1Icon"
+                android:layout_width="95dp"
+                android:layout_height="140dp"
+                android:background="@drawable/resume1icon" />
+
+            <ImageButton
+                android:id="@+id/resume2Icon"
+                android:layout_width="98dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/resume2icon" />
+
+            <ImageButton
+                android:id="@+id/resume3Icon"
+                android:layout_width="95dp"
+                android:layout_height="140dp"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/resume3icon" />
+
+            <ImageButton
+                android:id="@+id/resume4Icon"
+                android:layout_width="95dp"
+                android:layout_height="140dp"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/resume4icon" />
+
+
+        </LinearLayout>
+
+
+    </HorizontalScrollView>
+
+
+</android.support.constraint.ConstraintLayout>
